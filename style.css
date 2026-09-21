@@ -40,7 +40,7 @@
 
 a, a:visited {
     text-decoration: none; /* Optional: removes the underline */
-    color: black; /* Optional: sets the link color */
+    color: rgb(0, 0, 0); /* Optional: sets the link color */
 }
 
 .dark a,
