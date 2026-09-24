@@ -1,88 +1,169 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Project One — Matthew Carrillo</title>
-  </head>
-  <body>
+</head>
+
+<body>
+
     <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand"><a href="index.html">Matthew Carrillo</a></div>
-        <button
-          id="theme-toggle"
-          class="theme-toggle"
-          aria-label="Toggle theme"
-        >
-          🌙
-        </button>
-        <button
-          id="nav-toggle"
-          class="nav-toggle"
-          aria-label="Toggle navigation"
-        >
-          <span class="menu-icon" aria-hidden="true"
-            ><span></span><span></span><span></span
-          ></span>
-        </button>
-        <nav id="nav-links" class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="index.html#works">Works</a>
-          <a href="index.html#contact">Contact</a>
-          <a
-            class="linkedin-link"
-            href="https://www.linkedin.com/in/matthew-carrillo-68a561294/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
-            ><span aria-hidden="true">in</span
-            ><span class="sr-only">LinkedIn</span></a
-          >
-        </nav>
-      </div>
+
+        <div class="container header-inner">
+
+            <div class="brand">
+                <a href="index.html">Matthew Carrillo</a>
+            </div>
+
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                aria-label="Toggle theme"
+            >
+                🌙
+            </button>
+
+            <button
+                id="nav-toggle"
+                class="nav-toggle"
+                aria-label="Toggle navigation"
+            >
+                <span class="menu-icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <nav id="nav-links" class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#works">Works</a>
+                <a href="index.html#contact">Contact</a>
+
+                <a
+                    class="linkedin-link"
+                    href="https://www.linkedin.com/in/matthew-carrillo-68a561294/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                >
+                    <span aria-hidden="true">in</span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+
+            </nav>
+
+        </div>
+
     </header>
 
+
     <main>
-      <section class="section">
-        <div class="container">
-          <h1>Husky United</h1>
-          <div class="project-detail">
-            <div
-              class="project-photo-placeholder"
-              role="img"
-              aria-label="Project photo placeholder"
-            ></div>
-            <div class="project-info">
-              <p class="project-blurb">
-                A website for a senior project to help connect students to each
-                other.
-              </p>
-              <p>Project information will go here.</p>
-              <a class="btn" href="index.html">Back to Homepage</a>
-              <a
-                class="btn"
-                href="https://boofington99.github.io/senior-Project/home.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View Live Project</a
-              >
+
+        <section class="section project-page">
+
+            <div class="container">
+
+                <!-- Project Title -->
+                <div class="project-heading">
+
+                    <span class="project-label">
+                        Featured Project
+                    </span>
+
+                    <h1>Husky United</h1>
+
+                    <p class="project-subtitle">
+                        A student-focused web platform designed to help UConn
+                        students discover connections, events, and campus resources.
+                    </p>
+
+                </div>
+
+
+                <!-- Project Content -->
+                <div class="project-detail">
+
+                    <!-- Project Image -->
+                    <div
+                        class="project-photo-placeholder project-visual"
+                        role="img"
+                        aria-label="Husky United project preview"
+                    >
+                    </div>
+
+
+                    <!-- Project Information -->
+                    <div class="project-info">
+
+                        <p class="project-blurb">
+                            A website for a senior project to help connect students
+                            to each other.
+                        </p>
+
+                        <p>
+                            Husky United is a web-based student platform focused on
+                            helping students discover campus activities, connect with
+                            other students, and find useful campus resources.
+                        </p>
+
+                        <div class="project-actions">
+
+                            <a
+                                class="btn"
+                                href="index.html"
+                            >
+                                Back to Homepage
+                            </a>
+
+                            <a
+                                class="btn project-live-btn"
+                                href="https://boofington99.github.io/senior-Project/home.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View Live Project
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-          </div>
-        </div>
-      </section>
+
+        </section>
+
     </main>
 
+
     <footer class="site-footer">
-      <div class="container">
-        © <span id="year"></span> Matthew Carrillo — Coded with care.
-      </div>
+
+        <div class="container">
+
+            © <span id="year"></span>
+            Matthew Carrillo — Coded with care.
+
+        </div>
+
     </footer>
 
+
     <script src="java.js"></script>
+
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
     </script>
-  </body>
+
+</body>
+
 </html>
+```

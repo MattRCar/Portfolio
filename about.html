@@ -1,13 +1,9 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="style.css" />
-
     <title>About — Matthew Carrillo</title>
   </head>
 
@@ -40,11 +36,8 @@
 
         <nav id="nav-links" class="nav-links">
           <a href="index.html">Home</a>
-
           <a href="about.html">About</a>
-
           <a href="index.html#works">Works</a>
-
           <a href="index.html#contact">Contact</a>
 
           <a
@@ -62,31 +55,33 @@
     </header>
 
     <main>
-      <section class="section about">
-        <div class="container about-inner" style="align-items: flex-start">
-          <div style="flex: 0 0 320px">
+      <section class="section about about-page">
+        <div class="container about-inner">
+          <!-- Profile Image -->
+          <div class="about-photo">
             <img
               src="https://placehold.co/320x320?text=Matthew"
               alt="Matthew Carrillo"
-              style="width: 100%; border-radius: 10px; object-fit: cover"
             />
           </div>
-          <div class="about-text" style="flex: 1">
+
+          <!-- About Text -->
+          <div class="about-text about-content">
             <h1>About Me</h1>
 
-            <p style="font-size: 1.05rem; line-height: 1.6">
+            <p class="about-intro">
               I'm Matthew, a web developer who loves crafting clear and
               accessible user experiences. I specialize in front-end development
               with a focus on performance, responsive design, and clean UI.
             </p>
 
-            <p style="margin-top: 12px; line-height: 1.6">
+            <p class="about-description">
               Over the years I've worked on a variety of projects ranging from
               portfolio sites to small web apps. I enjoy working across the
               stack and continuously learning tools and modern workflows.
             </p>
 
-            <h3 style="margin-top: 18px">More about my work</h3>
+            <h3>More about my work</h3>
 
             <p>
               Interests: UI/UX, accessibility, state management, and building
@@ -94,19 +89,23 @@
               and various build tools.
             </p>
 
-            <h3 style="margin-top: 18px">Tools & Technologies</h3>
+            <h3>Tools & Technologies</h3>
 
             <p>
               I keep up with current design and development tools as well as
               emerging AI-assisted coding engines:
             </p>
+
             <h4>Development Tools</h4>
+
             <ul class="tech-list">
               <li class="tech-item">HTML5, CSS3, JavaScript, Bootstrap</li>
               <li class="tech-item">React.js</li>
               <li class="tech-item">Responsive Web Design</li>
             </ul>
+
             <h4>Design Tools</h4>
+
             <ul class="tech-list">
               <li class="tech-item">
                 Adobe Creative Cloud (Photoshop, Illustrator)
@@ -120,7 +119,9 @@
               <li class="tech-item">Microsoft 365</li>
               <li class="tech-item">GitHub</li>
             </ul>
+
             <h4>CMS & Web Platforms</h4>
+
             <ul class="tech-list">
               <li class="tech-item">WordPress</li>
               <li class="tech-item">Squarespace</li>
@@ -129,11 +130,13 @@
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="container">
         © <span id="year"></span> Matthew Carrillo — Coded with care.
       </div>
     </footer>
+
     <script src="java.js"></script>
 
     <script>

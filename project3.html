@@ -1,50 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Project Three — Matthew Carrillo</title>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand"><a href="index.html">Matthew Carrillo</a></div>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-      <nav id="nav-links" class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="index.html#works">Works</a>
-        <a href="index.html#contact">Contact</a>
-        <a class="linkedin-link" href="https://www.linkedin.com/in/matthew-carrillo-68a561294/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><span aria-hidden="true">in</span><span class="sr-only">LinkedIn</span></a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1>Project Three</h1>
-        <div class="project-detail">
-          <div class="project-photo-placeholder" role="img" aria-label="Project photo placeholder"></div>
-          <div class="project-info">
-            <p class="project-blurb">information here</p>
-            <p>Project information will go here.</p>
-            <a class="btn" href="index.html">Back to Homepage</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Project XXX — Matthew Carrillo</title>
+  </head>
+
+  <body>
+    <!-- ================================
+         HEADER
+         ================================ -->
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html"> Matthew Carrillo </a>
+        </div>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          🌙
+        </button>
+
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <nav id="nav-links" class="nav-links">
+          <a href="index.html"> Home </a>
+
+          <a href="about.html"> About </a>
+
+          <a href="index.html#works"> Works </a>
+
+          <a href="index.html#contact"> Contact </a>
+
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/matthew-carrillo-68a561294/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <span aria-hidden="true"> in </span>
+
+            <span class="sr-only"> LinkedIn </span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main>
+      <section class="section project-page">
+        <div class="container">
+          <!-- Project Heading -->
+
+          <div class="project-heading">
+            <h1>Project XXX</h1>
+          </div>
+
+          <!-- Project Details -->
+
+          <div class="project-detail">
+            <!-- Project Image -->
+
+            <div
+              class="project-photo-placeholder project-visual"
+              role="img"
+              aria-label="Project photo placeholder"
+            ></div>
+
+            <!-- Project Information -->
+
+            <div class="project-info">
+              <p class="project-blurb">Information here</p>
+
+              <p>Project information will go here.</p>
+
+              <!-- Project Buttons -->
+
+              <div class="project-actions">
+                <a class="btn" href="index.html"> Back to Homepage </a>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+
+    <footer class="site-footer">
+      <div class="container">
+        ©
+        <span id="year"></span>
+        Matthew Carrillo — Coded with care.
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Matthew Carrillo — Coded with care.</div>
-  </footer>
+    <!-- ================================
+         JAVASCRIPT
+         ================================ -->
 
-  <script src="java.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+    <script src="java.js"></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
