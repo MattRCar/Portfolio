@@ -123,6 +123,28 @@ body {
     color var(--transition);
 }
 
+/* =========================================
+   STICKY FOOTER
+   Keeps the footer at the bottom of
+   short pages, including mobile.
+   ========================================= */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
 /* =========================================================
    TYPOGRAPHY
    ========================================================= */

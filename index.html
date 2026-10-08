@@ -1,75 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Matthew Carrillo — Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="brand">Matthew Carrillo</div>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
-            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-                <span class="menu-icon" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </button>
-            <nav id="nav-links" class="nav-links">
-                <a href="about.html">About</a>
-                <a href="#works">Works</a>
-                <a href="#contact">Contact</a>
-                <a class="linkedin-link" href="https://www.linkedin.com/in/matthew-carrillo-68a561294/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><span aria-hidden="true">in</span><span class="sr-only">LinkedIn</span></a>
-            </nav>
-        </div>
+      <div class="container header-inner">
+        <div class="brand">Matthew Carrillo</div>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          🌙
+        </button>
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="nav-links" class="nav-links">
+          <a href="about.html">About</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/matthew-carrillo-68a561294/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            ><span aria-hidden="true">in</span
+            ><span class="sr-only">LinkedIn</span></a
+          >
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section id="about" class="section about">
-            <div class="container about-inner">
-                <div class="avatar-wrap">
-                    <img src="https://placehold.co/160x160?text=Matthew" alt="Profile" />
-                </div>
-                <div class="about-text">
-                    <h1>Hi, I'm Matthew</h1>
-                    <p>I'm a web developer focused on building simple, beautiful, and accessible websites. I enjoy turning ideas into clean, usable interfaces.</p>
-                    <p>Skills: HTML, CSS, JavaScript, React (learning), and responsive design.</p>
-                </div>
-            </div>
-        </section>
+      <section id="about" class="section about">
+        <div class="container about-inner">
+          <div class="avatar-wrap">
+            <img
+              src="https://placehold.co/160x160?text=Matthew"
+              alt="Profile"
+            />
+          </div>
+          <div class="about-text">
+            <h1>Hi, I'm Matthew</h1>
+            <p>
+              I'm a web developer focused on building simple, beautiful, and
+              accessible websites. I enjoy turning ideas into clean, usable
+              interfaces.
+            </p>
+            <p>
+              Skills: HTML, CSS, JavaScript, React (learning), and responsive
+              design.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="works" class="section works">
-            <div class="container">
-                <h2>Selected Works</h2>
-                <div class="works-grid">
-                    <article class="work-card">
-                        <div class="work-thumb">
-                            <img src="" alt="Husky United" />
-                        </div>
-                        <h3>Husky United</h3>
-                        <p>A website for a senior project to help connect students to each other.</p>
-                        <a class="btn" href="project1.html">View Project</a>
-                    </article>
-                    <article class="work-card">
-                        <div class="work-thumb"></div>
-                        <h3>Project Two</h3>
-                        <p>Short description of project two. Tools used and highlights.</p>
-                        <a class="btn" href="project2.html">View Project</a>
-                    </article>
-                    <article class="work-card">
-                        <div class="work-thumb"></div>
-                        <h3>Project Three</h3>
-                        <p>Short description of project three. Tools used and highlights.</p>
-                        <a class="btn" href="project3.html">View Project</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <section id="works" class="section works">
+        <div class="container">
+          <h2>Selected Works</h2>
+          <div class="works-grid">
+            <article class="work-card">
+              <div class="work-thumb">
+                <img src="" alt="Husky United" />
+              </div>
+              <h3>Husky United</h3>
+              <p>
+                A website for a senior project to help connect students to each
+                other.
+              </p>
+              <a class="btn" href="project1.html">View Project</a>
+            </article>
+            <article class="work-card">
+              <div class="work-thumb"></div>
+              <h3>Project Two</h3>
+              <p>
+                Short description of project two. Tools used and highlights.
+              </p>
+              <a class="btn" href="project2.html">View Project</a>
+            </article>
+            <article class="work-card">
+              <div class="work-thumb"></div>
+              <h3>Project Three</h3>
+              <p>
+                Short description of project three. Tools used and highlights.
+              </p>
+              <a class="btn" href="project3.html">View Project</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <!-- <section id="contact" class="section contact">
+      <!-- <section id="contact" class="section contact">
             <div class="container">    figure out how to make a email system
                 <h2>Contact</h2>
                 <p>If you have any questions or comments, please reach out using the form below or via email: <a href="mailto:matthewcarr1115@gmail.com">matthewcarr1115@gmail.com</a>.</p>
@@ -93,12 +128,14 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container">© <span id="year"></span> Matthew Carrillo — Coded with care.</div>
+      <div class="container">
+        © <span id="year"></span> Matthew Carrillo — Coded with care.
+      </div>
     </footer>
 
     <script src="java.js"></script>
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-</body>
+  </body>
 </html>
