@@ -131,19 +131,18 @@ body {
 
 html,
 body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
-
 
 /* =========================================================
    TYPOGRAPHY
@@ -1588,212 +1587,210 @@ body,
    ========================================= */
 
 .project-page {
-    overflow: hidden;
+  overflow: hidden;
 }
-
 
 /* =========================================
    PROJECT HEADING
    ========================================= */
 
 .project-heading {
-    opacity: 0;
-    transform: translateY(25px);
-    animation: projectHeadingEnter 700ms ease forwards;
-    animation-delay: 100ms;
+  opacity: 0;
+  transform: translateY(25px);
+  animation: projectHeadingEnter 700ms ease forwards;
+  animation-delay: 100ms;
 }
 
 .project-label {
-    display: inline-block;
-    margin-bottom: 10px;
-    color: var(--accent);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .project-heading h1 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .project-subtitle {
-    max-width: 700px;
-    color: var(--muted-text);
-    font-size: 1.05rem;
-    line-height: 1.6;
+  max-width: 700px;
+  color: var(--muted-text);
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
-
 
 /* =========================================
    PROJECT DETAIL
    ========================================= */
 
 .project-detail {
-    opacity: 0;
-    animation: projectDetailEnter 800ms ease forwards;
-    animation-delay: 350ms;
+  opacity: 0;
+  animation: projectDetailEnter 800ms ease forwards;
+  animation-delay: 350ms;
 }
-
 
 /* Project visual */
 .project-visual {
-    overflow: hidden;
-    position: relative;
-    transition:
-        transform 350ms ease,
-        box-shadow 350ms ease;
+  overflow: hidden;
+  position: relative;
+  transition:
+    transform 350ms ease,
+    box-shadow 350ms ease;
 }
-
 
 /* Subtle hover effect */
 .project-visual:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
-
 
 /* Add a subtle animated shine */
 .project-visual::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 45%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.16),
-        transparent
-    );
-    transform: skewX(-20deg);
-    transition: left 650ms ease;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.16),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 650ms ease;
+  pointer-events: none;
 }
 
 .project-visual:hover::after {
-    left: 140%;
+  left: 140%;
 }
-
 
 /* =========================================
    PROJECT INFORMATION
    ========================================= */
 
 .project-info {
-    animation: projectInfoEnter 700ms ease forwards;
-    animation-delay: 550ms;
+  animation: projectInfoEnter 700ms ease forwards;
+  animation-delay: 550ms;
 }
 
 .project-blurb {
-    font-size: 1.15rem;
-    font-weight: 600;
-    line-height: 1.6;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
-
 
 /* =========================================
    PROJECT BUTTONS
    ========================================= */
 
 .project-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
 }
 
 .project-actions .btn {
-    transition:
-        transform 220ms ease,
-        box-shadow 220ms ease,
-        background-color 220ms ease;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    background-color 220ms ease;
 }
 
 .project-actions .btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
 }
-
 
 /* Make the live project button stand out */
 .project-live-btn {
-    position: relative;
+  position: relative;
 }
-
 
 /* =========================================
    PROJECT KEYFRAMES
    ========================================= */
 
 @keyframes projectHeadingEnter {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
 
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 @keyframes projectDetailEnter {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
 
-    from {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 @keyframes projectInfoEnter {
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
 
-    from {
-        opacity: 0;
-        transform: translateX(25px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-
 
 /* =========================================
    REDUCED MOTION
    ========================================= */
 
 @media (prefers-reduced-motion: reduce) {
+  .project-heading,
+  .project-detail,
+  .project-info {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
 
-    .project-heading,
-    .project-detail,
-    .project-info {
-        opacity: 1;
-        transform: none;
-        animation: none;
-    }
+  .project-visual,
+  .project-actions .btn {
+    transition: none;
+  }
 
-    .project-visual,
-    .project-actions .btn {
-        transition: none;
-    }
-
-    .project-visual::after {
-        display: none;
-    }
-
+  .project-visual::after {
+    display: none;
+  }
 }
 
+.project-visual {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.project-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-visual:hover img {
+  transform: scale(1.03);
+}
