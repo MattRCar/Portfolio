@@ -1,7 +1,5 @@
 /* =========================================================
-   MODERN TECH PORTFOLIO
-   Light + Dark Theme
-   Typography: Space Grotesk + Inter
+   MODERN TECH PORTFOLIO   Light + Dark Theme   Typography: Space Grotesk + Inter
    ========================================================= */
 
 /* =========================================================
@@ -10,27 +8,37 @@
 
 :root {
   --bg: #f5f7fa;
+
   --card: #ffffff;
+
   --card-hover: #f8fafc;
 
   --accent: #2563eb;
+
   --accent-hover: #1d4ed8;
+
   --accent-soft: rgba(37, 99, 235, 0.08);
 
   --text: #172033;
+
   --muted-text: #5b6575;
 
   --border: #e2e8f0;
+
   --border-strong: #cbd5e1;
 
   --footer-bg: #e8ecf2;
+
   --footer-text: #4b5563;
 
   --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.05);
+
   --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
 
   --radius-sm: 8px;
+
   --radius-md: 12px;
+
   --radius-lg: 16px;
 
   --transition: 220ms ease;
@@ -43,6 +51,7 @@
 a,
 a:visited {
   text-decoration: none;
+
   color: #000000;
 }
 
@@ -57,23 +66,31 @@ a:visited {
 
 .dark {
   --bg: #0b1120;
+
   --card: #151e2e;
+
   --card-hover: #1a2638;
 
   --accent: #60a5fa;
+
   --accent-hover: #93c5fd;
+
   --accent-soft: rgba(96, 165, 250, 0.1);
 
   --text: #f8fafc;
+
   --muted-text: #b8c2d1;
 
   --border: #263449;
+
   --border-strong: #34445c;
 
   --footer-bg: #111827;
+
   --footer-text: #b8c2d1;
 
   --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.18);
+
   --shadow-md: 0 12px 35px rgba(0, 0, 0, 0.28);
 }
 
@@ -92,7 +109,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+
   scroll-padding-top: 80px;
+
   font-size: clamp(14px, 1.2vw, 18px);
 }
 
@@ -110,12 +129,15 @@ body {
     sans-serif;
 
   background: var(--bg);
+
   color: var(--text);
 
   font-size: 1rem;
+
   line-height: 1.6;
 
   -webkit-font-smoothing: antialiased;
+
   text-rendering: optimizeLegibility;
 
   transition:
@@ -124,9 +146,7 @@ body {
 }
 
 /* =========================================
-   STICKY FOOTER
-   Keeps the footer at the bottom of
-   short pages, including mobile.
+   STICKY FOOTER   Keeps the footer at the bottom of   short pages, including mobile.
    ========================================= */
 
 html,
@@ -136,7 +156,9 @@ body {
 
 body {
   min-height: 100vh;
+
   display: flex;
+
   flex-direction: column;
 }
 
@@ -168,7 +190,9 @@ h1 {
   margin: 0 0 1rem;
 
   font-size: clamp(2.5rem, 6vw, 4.5rem);
+
   line-height: 1.05;
+
   font-weight: 700;
 }
 
@@ -176,7 +200,9 @@ h2 {
   margin: 0 0 0.75rem;
 
   font-size: clamp(2rem, 4vw, 3rem);
+
   line-height: 1.1;
+
   font-weight: 700;
 }
 
@@ -184,7 +210,9 @@ h3 {
   margin: 0 0 0.5rem;
 
   font-size: clamp(1.25rem, 2vw, 1.5rem);
+
   line-height: 1.2;
+
   font-weight: 600;
 }
 
@@ -198,9 +226,11 @@ p {
 
 .container {
   width: 100%;
+
   max-width: 1120px;
 
   margin: 0 auto;
+
   padding: 0 24px;
 }
 
@@ -231,6 +261,7 @@ body,
 
 .site-header {
   position: sticky;
+
   top: 0;
 
   z-index: 40;
@@ -240,6 +271,7 @@ body,
   border-bottom: 1px solid var(--border);
 
   backdrop-filter: blur(14px);
+
   -webkit-backdrop-filter: blur(14px);
 }
 
@@ -251,9 +283,11 @@ body,
   position: relative;
 
   display: flex;
+
   align-items: center;
 
   min-height: 72px;
+
   padding: 12px 0;
 }
 
@@ -267,6 +301,7 @@ body,
   text-decoration: none;
 
   font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+
   font-weight: 700;
 
   letter-spacing: -0.02em;
@@ -286,9 +321,11 @@ body,
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   background: transparent;
+
   border: 0;
 
   color: var(--text);
@@ -316,6 +353,7 @@ body,
   border-radius: var(--radius-sm);
 
   font-size: 0.95rem;
+
   font-weight: 500;
 
   transition:
@@ -326,6 +364,7 @@ body,
 
 .nav-links a:hover {
   color: var(--accent);
+
   background: var(--accent-soft);
 }
 
@@ -337,9 +376,11 @@ body,
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   width: 30px;
+
   height: 30px;
 
   padding: 0 !important;
@@ -347,9 +388,11 @@ body,
   border-radius: 7px !important;
 
   background: #0a66c2;
+
   color: #ffffff !important;
 
   font-weight: 700;
+
   font-size: 0.9rem;
 
   transition:
@@ -359,6 +402,7 @@ body,
 
 .linkedin-link:hover {
   background: #004182 !important;
+
   color: #ffffff !important;
 
   transform: translateY(-3px) scale(1.05);
@@ -372,15 +416,19 @@ body,
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   width: 40px;
+
   height: 40px;
 
   border: 0;
+
   border-radius: var(--radius-sm);
 
   background: transparent;
+
   color: var(--text);
 
   font-size: 1.05rem;
@@ -395,6 +443,7 @@ body,
 
 .theme-toggle:hover {
   background: var(--accent-soft);
+
   color: var(--accent);
 
   transform: rotate(18deg) scale(1.08);
@@ -408,9 +457,11 @@ body,
   position: absolute;
 
   width: 1px;
+
   height: 1px;
 
   padding: 0;
+
   margin: -1px;
 
   overflow: hidden;
@@ -480,11 +531,13 @@ body,
 
 .avatar-wrap img {
   width: 200px;
+
   height: 200px;
 
   object-fit: cover;
 
   border-radius: var(--radius-lg);
+
   border: 4px solid var(--card);
 
   box-shadow: var(--shadow-md);
@@ -529,6 +582,7 @@ body,
 
 .works h2 {
   position: relative;
+
   display: inline-block;
 }
 
@@ -538,6 +592,7 @@ body,
   display: block;
 
   width: 42px;
+
   height: 3px;
 
   margin-top: 8px;
@@ -608,8 +663,7 @@ body,
 }
 
 /* =========================================================
-   PROJECT THUMBNAIL
-   Clean lift + glow effect
+   PROJECT THUMBNAIL   Clean lift + glow effect
    ========================================================= */
 
 .work-thumb {
@@ -668,6 +722,7 @@ body,
   display: block;
 
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -727,6 +782,7 @@ body,
   display: inline-flex;
 
   align-items: center;
+
   justify-content: center;
 
   width: fit-content;
@@ -744,6 +800,7 @@ body,
   text-decoration: none;
 
   font-size: 0.95rem;
+
   font-weight: 600;
 
   cursor: pointer;
@@ -804,6 +861,7 @@ body,
   color: var(--text);
 
   font-size: 0.95rem;
+
   font-weight: 500;
 }
 
@@ -822,6 +880,7 @@ body,
   border-radius: var(--radius-sm);
 
   font-family: inherit;
+
   font-size: 1rem;
 
   outline: none;
@@ -886,51 +945,12 @@ body,
   border-radius: 999px;
 
   font-size: 0.88rem;
+
   font-weight: 500;
 }
 
 .dark .tech-item {
   border-color: rgba(96, 165, 250, 0.16);
-}
-
-/* =========================================================
-   PROJECT DETAIL
-   ========================================================= */
-
-.project-detail {
-  display: grid;
-
-  grid-template-columns:
-    minmax(0, 1.2fr)
-    minmax(220px, 0.8fr);
-
-  gap: 40px;
-
-  align-items: center;
-
-  margin-top: 28px;
-}
-
-.project-photo-placeholder {
-  width: 100%;
-
-  aspect-ratio: 16 / 9;
-
-  background: var(--card);
-
-  border: 2px dashed var(--border-strong);
-
-  border-radius: var(--radius-md);
-}
-
-.project-blurb {
-  margin: 0 0 20px;
-
-  color: var(--muted-text);
-
-  font-size: 0.95rem;
-
-  line-height: 1.7;
 }
 
 /* =========================================================
@@ -961,6 +981,7 @@ body,
   position: relative;
 
   width: 22px;
+
   height: 18px;
 }
 
@@ -968,6 +989,7 @@ body,
   position: absolute;
 
   left: 0;
+
   right: 0;
 
   display: block;
@@ -1049,6 +1071,7 @@ body,
 
   .avatar-wrap img {
     width: 200px;
+
     height: 200px;
   }
 }
@@ -1092,6 +1115,7 @@ body,
 
   .avatar-wrap img {
     width: 240px;
+
     height: 240px;
   }
 }
@@ -1123,6 +1147,7 @@ body,
 
   .avatar-wrap img {
     width: 130px;
+
     height: 130px;
   }
 
@@ -1148,6 +1173,7 @@ body,
     z-index: 60;
 
     width: 46px;
+
     height: 46px;
 
     border-radius: var(--radius-sm);
@@ -1165,6 +1191,7 @@ body,
     transform: translateY(-50%);
 
     width: 40px;
+
     height: 40px;
   }
 
@@ -1172,6 +1199,7 @@ body,
     position: absolute;
 
     left: 0;
+
     right: 0;
 
     top: 100%;
@@ -1390,24 +1418,34 @@ body,
    ========================================= */
 
 /* Main About section */
+
 .about-page {
   overflow: hidden;
 }
 
 /* Profile photo enters from the left */
+
 .about-photo {
   opacity: 0;
+
   transform: translateX(-45px);
+
   animation: aboutPhotoEnter 800ms ease forwards;
+
   animation-delay: 150ms;
 }
 
 /* Give the image a little interaction */
+
 .about-photo img {
   display: block;
+
   width: 100%;
+
   border-radius: 10px;
+
   object-fit: cover;
+
   transition:
     transform 350ms ease,
     box-shadow 350ms ease;
@@ -1415,37 +1453,54 @@ body,
 
 .about-photo:hover img {
   transform: scale(1.025);
+
   box-shadow: 0 16px 35px rgba(15, 23, 42, 0.15);
 }
 
 /* Text enters from the right */
+
 .about-content {
   opacity: 0;
+
   transform: translateX(45px);
+
   animation: aboutTextEnter 800ms ease forwards;
+
   animation-delay: 250ms;
 }
 
 /* Main heading */
+
 .about-content h1 {
   position: relative;
+
   width: fit-content;
 }
 
 .about-content h1::after {
   content: "";
+
   position: absolute;
+
   left: 0;
+
   bottom: -8px;
+
   width: 0;
+
   height: 3px;
+
   background: var(--accent);
+
   border-radius: 10px;
+
   animation: aboutHeadingLine 600ms ease forwards;
+
   animation-delay: 850ms;
 }
 
 /* Section headings */
+
 .about-content h3,
 .about-content h4 {
   transition:
@@ -1456,17 +1511,22 @@ body,
 .about-content h3:hover,
 .about-content h4:hover {
   transform: translateX(5px);
+
   color: var(--accent);
 }
 
 /* Technology items */
+
 .about-content .tech-item {
   opacity: 0;
+
   transform: translateY(12px);
+
   animation: techItemEnter 450ms ease forwards;
 }
 
 /* Stagger the technology items */
+
 .about-content .tech-item:nth-child(1) {
   animation-delay: 650ms;
 }
@@ -1496,6 +1556,7 @@ body,
 }
 
 /* Technology item hover */
+
 .about-content .tech-item {
   transition:
     transform 220ms ease,
@@ -1504,6 +1565,7 @@ body,
 
 .about-content .tech-item:hover {
   transform: translateX(7px);
+
   color: var(--accent);
 }
 
@@ -1514,11 +1576,13 @@ body,
 @keyframes aboutPhotoEnter {
   from {
     opacity: 0;
+
     transform: translateX(-45px);
   }
 
   to {
     opacity: 1;
+
     transform: translateX(0);
   }
 }
@@ -1526,11 +1590,13 @@ body,
 @keyframes aboutTextEnter {
   from {
     opacity: 0;
+
     transform: translateX(45px);
   }
 
   to {
     opacity: 1;
+
     transform: translateX(0);
   }
 }
@@ -1548,11 +1614,13 @@ body,
 @keyframes techItemEnter {
   from {
     opacity: 0;
+
     transform: translateY(12px);
   }
 
   to {
     opacity: 1;
+
     transform: translateY(0);
   }
 }
@@ -1566,12 +1634,15 @@ body,
   .about-content,
   .about-content .tech-item {
     opacity: 1;
+
     transform: none;
+
     animation: none;
   }
 
   .about-content h1::after {
     width: 100%;
+
     animation: none;
   }
 
@@ -1582,6 +1653,7 @@ body,
     transition: none;
   }
 }
+
 /* =========================================
    PROJECT PAGE
    ========================================= */
@@ -1596,18 +1668,27 @@ body,
 
 .project-heading {
   opacity: 0;
+
   transform: translateY(25px);
+
   animation: projectHeadingEnter 700ms ease forwards;
+
   animation-delay: 100ms;
 }
 
 .project-label {
   display: inline-block;
+
   margin-bottom: 10px;
+
   color: var(--accent);
+
   font-size: 0.85rem;
+
   font-weight: 700;
+
   letter-spacing: 0.08em;
+
   text-transform: uppercase;
 }
 
@@ -1617,8 +1698,11 @@ body,
 
 .project-subtitle {
   max-width: 700px;
+
   color: var(--muted-text);
+
   font-size: 1.05rem;
+
   line-height: 1.6;
 }
 
@@ -1628,41 +1712,58 @@ body,
 
 .project-detail {
   opacity: 0;
+
   animation: projectDetailEnter 800ms ease forwards;
+
   animation-delay: 350ms;
 }
 
 /* Project visual */
+
 .project-visual {
   overflow: hidden;
+
   position: relative;
+
   transition:
     transform 350ms ease,
     box-shadow 350ms ease;
 }
 
 /* Subtle hover effect */
+
 .project-visual:hover {
   transform: translateY(-5px);
+
   box-shadow: var(--shadow-md);
 }
 
 /* Add a subtle animated shine */
+
 .project-visual::after {
   content: "";
+
   position: absolute;
+
   top: 0;
+
   left: -100%;
+
   width: 45%;
+
   height: 100%;
+
   background: linear-gradient(
     90deg,
     transparent,
     rgba(255, 255, 255, 0.16),
     transparent
   );
+
   transform: skewX(-20deg);
+
   transition: left 650ms ease;
+
   pointer-events: none;
 }
 
@@ -1675,14 +1776,10 @@ body,
    ========================================= */
 
 .project-info {
+  opacity: 0;
   animation: projectInfoEnter 700ms ease forwards;
-  animation-delay: 550ms;
-}
 
-.project-blurb {
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 1.6;
+  animation-delay: 550ms;
 }
 
 /* =========================================
@@ -1691,8 +1788,11 @@ body,
 
 .project-actions {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 12px;
+
   margin-top: 24px;
 }
 
@@ -1705,10 +1805,12 @@ body,
 
 .project-actions .btn:hover {
   transform: translateY(-4px);
+
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.14);
 }
 
 /* Make the live project button stand out */
+
 .project-live-btn {
   position: relative;
 }
@@ -1720,11 +1822,13 @@ body,
 @keyframes projectHeadingEnter {
   from {
     opacity: 0;
+
     transform: translateY(25px);
   }
 
   to {
     opacity: 1;
+
     transform: translateY(0);
   }
 }
@@ -1732,11 +1836,13 @@ body,
 @keyframes projectDetailEnter {
   from {
     opacity: 0;
+
     transform: translateY(35px);
   }
 
   to {
     opacity: 1;
+
     transform: translateY(0);
   }
 }
@@ -1744,11 +1850,13 @@ body,
 @keyframes projectInfoEnter {
   from {
     opacity: 0;
+
     transform: translateX(25px);
   }
 
   to {
     opacity: 1;
+
     transform: translateX(0);
   }
 }
@@ -1762,7 +1870,9 @@ body,
   .project-detail,
   .project-info {
     opacity: 1;
+
     transform: none;
+
     animation: none;
   }
 
@@ -1776,11 +1886,28 @@ body,
   }
 }
 
+/* =========================================================
+   PROJECT PAGE - TWO TOP PANELS + FULL-WIDTH DETAILS
+   ========================================================= */
+.project-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.project-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--card);
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+}
+
 .project-visual {
   display: block;
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
+  border-radius: var(--radius-md);
 }
 
 .project-visual img {
@@ -1788,9 +1915,77 @@ body,
   width: 100%;
   height: auto;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 350ms ease;
 }
 
 .project-visual:hover img {
   transform: scale(1.03);
+}
+
+.project-info {
+  min-width: 0;
+}
+
+.project-info h2,
+.project-breakdown h2 {
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  line-height: 1.25;
+}
+
+.project-blurb {
+  margin: 0 0 20px;
+  color: var(--muted-text);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.project-info p {
+  overflow-wrap: anywhere;
+}
+
+.project-breakdown {
+  margin-top: 32px;
+  padding: clamp(24px, 4vw, 40px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  animation: projectDetailEnter 800ms ease 650ms forwards;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+.project-breakdown h2 {
+  margin-bottom: 24px;
+}
+.project-breakdown h3 {
+  margin: 28px 0 10px;
+}
+.project-breakdown p {
+  max-width: 85ch;
+  color: var(--muted-text);
+  line-height: 1.8;
+}
+.project-breakdown p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 699px) {
+  .project-detail {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .project-breakdown {
+    margin-top: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-breakdown {
+    opacity: 1;
+    animation: none;
+  }
 }

@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Project One — Matthew Carrillo</title>
+    <title>Husky United — Matthew Carrillo</title>
   </head>
 
   <body>
+    <!-- ========================================
+         HEADER
+         ======================================== -->
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
@@ -18,6 +21,7 @@
         <button
           id="theme-toggle"
           class="theme-toggle"
+          type="button"
           aria-label="Toggle theme"
         >
           🌙
@@ -26,7 +30,10 @@
         <button
           id="nav-toggle"
           class="nav-toggle"
+          type="button"
           aria-label="Toggle navigation"
+          aria-controls="nav-links"
+          aria-expanded="false"
         >
           <span class="menu-icon" aria-hidden="true">
             <span></span>
@@ -55,10 +62,13 @@
       </div>
     </header>
 
+    <!-- ========================================
+         MAIN PROJECT CONTENT
+         ======================================== -->
     <main>
       <section class="section project-page">
         <div class="container">
-          <!-- Project Title -->
+          <!-- PROJECT HEADING -->
           <div class="project-heading">
             <span class="project-label"> Featured Project </span>
 
@@ -70,30 +80,54 @@
             </p>
           </div>
 
-          <!-- Project Content -->
+          <!-- ==================================
+               TOP TWO-COLUMN LAYOUT
+               ================================== -->
           <div class="project-detail">
-            <!-- Project Image -->
-            <div
-              class="project-photo-placeholder project-visual"
-              role="img"
-              aria-label="Husky United project preview"
-            ></div>
+         <!-- LEFT: PROJECT IMAGE -->
+<div class="project-visual">
+  <img
+    src="imgs/Husky-United.png"
+    alt="Husky United website homepage preview"
+    loading="lazy"
+  />
+</div>
 
-            <!-- Project Information -->
+            <!-- RIGHT: PROJECT OVERVIEW -->
             <div class="project-info">
+              <h2>Project Overview</h2>
+
               <p class="project-blurb">
-                A website for a senior project to help connect students to each
-                other.
+                A student-centered web application designed to make campus
+                connections easier and more accessible.
               </p>
 
               <p>
-                Husky United is a web-based student platform focused on helping
-                students discover campus activities, connect with other
-                students, and find useful campus resources.
+                Husky United is my senior project at the University of
+                Connecticut. The platform focuses on helping students discover
+                campus activities, connect with other students, and explore
+                available university resources.
               </p>
 
+              <p>
+                I designed and developed the platform using HTML, CSS,
+                JavaScript, and Firebase, with features supporting user
+                authentication, campus events, and student interaction.
+              </p>
+
+              <h3>Technologies Used</h3>
+
+              <ul class="tech-list">
+                <li class="tech-item">HTML</li>
+                <li class="tech-item">CSS</li>
+                <li class="tech-item">JavaScript</li>
+                <li class="tech-item">Firebase</li>
+                <li class="tech-item">Google Maps API</li>
+              </ul>
+
+              <!-- PROJECT BUTTONS -->
               <div class="project-actions">
-                <a class="btn" href="index.html"> Back to Homepage </a>
+                <a class="btn" href="index.html#works"> Back to Projects </a>
 
                 <a
                   class="btn project-live-btn"
@@ -106,10 +140,57 @@
               </div>
             </div>
           </div>
+
+          <!-- ==================================
+               BOTTOM FULL-WIDTH SECTION
+               ================================== -->
+          <div class="project-breakdown">
+            <h2>Project Development & Process</h2>
+
+            <h3>Planning & Design</h3>
+            <p>
+              Husky United began with the idea of creating a digital space for
+              students who may have difficulty finding campus activities or
+              initiating connections with others. I planned the platform around
+              student needs, developed initial layouts, and worked on creating
+              an interface that would make important features easy to discover.
+            </p>
+
+            <h3>Development & Implementation</h3>
+            <p>
+              I developed the website using HTML, CSS, and JavaScript to create
+              a responsive, multi-page experience. Firebase was integrated to
+              support user authentication and store information for platform
+              features, including campus events and participation. I also
+              incorporated Google sign-in and map functionality to support a
+              more interactive experience.
+            </p>
+
+            <h3>Challenges & Solutions</h3>
+            <p>
+              One challenge was connecting the front-end interface with Firebase
+              while keeping information consistent across multiple pages. I
+              worked through authentication setup, JavaScript module paths, and
+              event data handling to improve reliability and functionality.
+            </p>
+
+            <h3>Final Outcome & Reflection</h3>
+            <p>
+              Husky United has allowed me to apply my front-end development
+              skills to a larger interactive application. The project has
+              strengthened my understanding of user experience, database
+              integration, and developing features that serve a specific
+              audience. As an ongoing senior project, I continue to refine its
+              functionality, accessibility, and overall user experience.
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
     <footer class="site-footer">
       <div class="container">
         © <span id="year"></span>
@@ -117,6 +198,9 @@
       </div>
     </footer>
 
+    <!-- ========================================
+         JAVASCRIPT
+         ======================================== -->
     <script src="java.js"></script>
 
     <script>
@@ -124,4 +208,3 @@
     </script>
   </body>
 </html>
-```
