@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Project XXX — Matthew Carrillo</title>
+  </head>
+
+  <body>
+    <!-- ================================
+         HEADER
+         ================================ -->
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html"> Matthew Carrillo </a>
+        </div>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          🌙
+        </button>
+
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <nav id="nav-links" class="nav-links">
+          <a href="index.html"> Home </a>
+
+          <a href="about.html"> About </a>
+
+          <a href="index.html#works"> Works </a>
+
+          <a href="index.html#contact"> Contact </a>
+
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/matthew-r-carrillo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+          >
+            <span aria-hidden="true"> in </span>
+
+            <span class="sr-only"> LinkedIn </span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main>
+      <section class="section project-page">
+        <div class="container">
+          <!-- Project Heading -->
+          <div class="project-heading">
+            <h1>Project XXX</h1>
+          </div>
+
+          <!-- TOP: IMAGE + PROJECT OVERVIEW -->
+          <div class="project-detail">
+            <!-- Left: Project Image -->
+            <div
+              class="project-photo-placeholder project-visual"
+              role="img"
+              aria-label="Project screenshot"
+            ></div>
+
+            <!-- Right: Project Information -->
+            <div class="project-info">
+              <h2>Project Overview</h2>
+
+              <p class="project-blurb">
+                
+              </p>
+
+              <p>
+               
+              </p>
+
+              <div class="project-actions">
+                <a class="btn" href="index.html#works"> Back to Projects </a>
+
+                <a
+                  class="btn project-live-btn"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM: FULL-WIDTH PROJECT BREAKDOWN -->
+          <div class="project-breakdown">
+            <h2>Project Development & Process</h2>
+
+            <h3>Planning & Design</h3>
+            <p>
+              
+            </p>
+
+            <h3>Development & Implementation</h3>
+            <p>
+             
+            </p>
+
+            <h3>Challenges & Solutions</h3>
+            <p>
+             
+            </p>
+
+            <h3>Final Outcome & Reflection</h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+
+    <footer class="site-footer">
+      <div class="container">
+        ©
+        <span id="year"></span>
+        Matthew Carrillo — Coded with care.
+      </div>
+    </footer>
+
+    <!-- ================================
+         JAVASCRIPT
+         ================================ -->
+
+    <script src="java.js"></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

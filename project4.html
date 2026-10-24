@@ -2,28 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="style.css" />
 
-    <title>Project XXX — Matthew Carrillo</title>
+    <title>History of Video Games — Matthew Carrillo</title>
   </head>
 
   <body>
-    <!-- ================================
-         HEADER
-         ================================ -->
-
+    <!-- HEADER -->
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <a href="index.html"> Matthew Carrillo </a>
+          <a href="index.html">Matthew Carrillo</a>
         </div>
 
         <button
           id="theme-toggle"
           class="theme-toggle"
+          type="button"
           aria-label="Toggle theme"
         >
           🌙
@@ -32,7 +28,10 @@
         <button
           id="nav-toggle"
           class="nav-toggle"
+          type="button"
           aria-label="Toggle navigation"
+          aria-controls="nav-links"
+          aria-expanded="false"
         >
           <span class="menu-icon" aria-hidden="true">
             <span></span>
@@ -42,13 +41,10 @@
         </button>
 
         <nav id="nav-links" class="nav-links">
-          <a href="index.html"> Home </a>
-
-          <a href="about.html"> About </a>
-
-          <a href="index.html#works"> Works </a>
-
-          <a href="index.html#contact"> Contact </a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="index.html#works">Works</a>
+          <a href="index.html#contact">Contact</a>
 
           <a
             class="linkedin-link"
@@ -57,106 +53,183 @@
             rel="noopener noreferrer"
             aria-label="LinkedIn profile"
           >
-            <span aria-hidden="true"> in </span>
-
-            <span class="sr-only"> LinkedIn </span>
+            <span aria-hidden="true">in</span>
+            <span class="sr-only">LinkedIn</span>
           </a>
         </nav>
       </div>
     </header>
 
-    <!-- ================================
-         MAIN CONTENT
-         ================================ -->
-
+    <!-- MAIN CONTENT -->
     <main>
       <section class="section project-page">
         <div class="container">
-          <!-- Project Heading -->
+          <!-- PROJECT HEADING -->
           <div class="project-heading">
-            <h1>Project XXX</h1>
+            <span class="project-label"> Digital Publication Design </span>
+
+            <h1>History of Video Games</h1>
+
+            <p class="project-subtitle">
+              A digital publication concept exploring the evolution of video
+              games, gaming companies, and influential titles.
+            </p>
           </div>
 
-          <!-- TOP: IMAGE + PROJECT OVERVIEW -->
+          <!-- PROJECT OVERVIEW -->
           <div class="project-detail">
-            <!-- Left: Project Image -->
-            <div
-              class="project-photo-placeholder project-visual"
-              role="img"
-              aria-label="Project screenshot"
-            ></div>
+            <!-- LEFT: PROJECT PREVIEW -->
+            <div class="project-visual">
+              <img
+                src="imgs/VideoGamesPublication.png"
+                alt="History of Video Games digital publication design"
+                loading="lazy"
+              />
+            </div>
 
-            <!-- Right: Project Information -->
+            <!-- RIGHT: PROJECT INFORMATION -->
             <div class="project-info">
               <h2>Project Overview</h2>
 
               <p class="project-blurb">
-                
+                A digital publication design project created for DMD 2470.
               </p>
 
               <p>
-               
+                History of Video Games is a digital publication concept focused
+                on exploring the history of gaming through featured articles,
+                gaming companies, and influential video game titles.
               </p>
+
+              <p>
+                The project includes a homepage, a PlayStation article
+                collection, and a feature article exploring the legacy of Final
+                Fantasy VII.
+              </p>
+
+              <p>
+                I developed initial wireframes before creating the final visual
+                designs, experimenting with typography, color, imagery, and
+                content organization.
+              </p>
+              <h3>Technologies Used</h3>
+
+              <ul class="tech-list">
+                <li class="tech-item">FIGMA</li>
+                <li class="tech-item">ADOBE PHOTOSHOP</li>
+                <li class="tech-item">ADOBE ILLUSTRATOR</li>
+              </ul>
 
               <div class="project-actions">
                 <a class="btn" href="index.html#works"> Back to Projects </a>
-
-                <a
-                  class="btn project-live-btn"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Live Project
-                </a>
               </div>
             </div>
           </div>
 
-          <!-- BOTTOM: FULL-WIDTH PROJECT BREAKDOWN -->
+          <!-- PDF VIEWER -->
           <div class="project-breakdown">
-            <h2>Project Development & Process</h2>
+            <h2>Explore the Publication</h2>
 
-            <h3>Planning & Design</h3>
             <p>
-              
+              Browse the completed design or switch to the original wireframes
+              to see how the publication developed.
             </p>
 
-            <h3>Development & Implementation</h3>
+            <div class="publication-viewer">
+              <!-- DESIGN SWITCH -->
+              <div class="publication-tabs">
+                <button
+                  type="button"
+                  class="publication-tab active"
+                  data-pdf="final"
+                  aria-pressed="true"
+                >
+                  Final Design
+                </button>
+
+                <button
+                  type="button"
+                  class="publication-tab"
+                  data-pdf="wireframes"
+                  aria-pressed="false"
+                >
+                  Original Wireframes
+                </button>
+              </div>
+
+              <!-- PAGE COUNTER -->
+              <div class="publication-toolbar">
+                <span id="publication-page-label"> Page 1 of 3 </span>
+              </div>
+
+              <!-- EMBEDDED PDF -->
+              <iframe
+                id="publication-frame"
+                title="History of Video Games final design"
+                src="PDF/publication-final.pdf#page=1&toolbar=0"
+              ></iframe>
+
+              <!-- PAGE NAVIGATION -->
+              <div class="publication-controls">
+                <button
+                  type="button"
+                  id="publication-prev"
+                  class="btn"
+                  disabled
+                >
+                  ← Previous
+                </button>
+
+                <button type="button" id="publication-next" class="btn">
+                  Next →
+                </button>
+              </div>
+            </div>
+
+            <!-- DESIGN PROCESS -->
+            <h2>Design Process & Reflection</h2>
+
+            <h3>Planning & Wireframes</h3>
             <p>
-             
+              I started by creating wireframes to establish the overall
+              structure of the publication, including its homepage, article
+              categories, and individual article layouts. I wanted to build this site based
+              on retro video game aesthetics, and my personal favorite game Final Fantasy 
+              influenced a lot of the design choices.
             </p>
 
-            <h3>Challenges & Solutions</h3>
+            <h3>Visual Design</h3>
             <p>
-             
+              For the completed design, I explored a darker color palette with
+              bright accents inspired by video game aesthetics. I incorporated
+              game imagery, typography, and visual sections to give the
+              publication a stronger identity. When it came to the articles, I focused on
+               readability and visual hierarchy to ensure a pleasant reading experience, but also 
+               that matched the aesthetic of the orginal videogame.
             </p>
 
             <h3>Final Outcome & Reflection</h3>
             <p>
-              
+              This project gave me an opportunity to explore digital editorial
+              design and understand how typography, layout, imagery, and visual
+              hierarchy work together to present information. It also allowed me to
+               experiment with incorporating video game aesthetics into a digital publication.
+               It was a very interesting and enjoyable project that allowed a lot of creative exploration.
             </p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ================================
-         FOOTER
-         ================================ -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
-        ©
-        <span id="year"></span>
+        © <span id="year"></span>
         Matthew Carrillo — Coded with care.
       </div>
     </footer>
 
-    <!-- ================================
-         JAVASCRIPT
-         ================================ -->
-
+    <!-- JAVASCRIPT -->
     <script src="java.js"></script>
 
     <script>
